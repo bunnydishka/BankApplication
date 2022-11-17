@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;800;900&display=swap");
+
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow: auto;
+}
+
+.nav {
+    background-color: #F5F5F6;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    justify-content: space-around;
+    justify-items: baseline;
+}
+
+.breadcrumb {
+    --bs-breadcrumb-divider: '';
+    font-weight: 500;
+}
+
+.breadcrumb-item :hover {
+    color: black;
+}
+
+.breadcrumb-item a {
+    color: #959BA4;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.btn-sign {
+    padding: 5px 10px;
+    background-color: #fff;
+    border: none;
+    font-weight: 500;
+}
+
+.header {
+    margin-top: 3%;
+    /* margin-left: 19%; */
+    font-weight: 700;
+}
+
+.enterAmount {
+    border: 1px solid #E5E5E5;
+    border-radius: 5px;
+}
+
+.inputAmount {
+    font-weight: 700;
+    outline: none;
+    border: none;
+}
+
+.currentCurrency {
+    color: #C6C6C6;
+}
+
+
+.converter-con {
+    display: flex;
+    /* margin-left: 19%; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#currencyForm {
+    padding-left: 15%;
+}
+
+.curency-info {
+    color: #9F9F9F;
+    font-size: 17px;
+}
+
+.to label {
+    display: inline-block;
+    background-color: #ddd;
+    font-family: Arial;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 7px 10px;
+    height: 40px;
+}
+
+.to {
+    height: 10%;
+}
+
+input[type="radio"]+label {
+    color: #C6C6C6;
+    background-color: #fff;
+    border: 1px solid #C6C6C6;
+    padding-bottom: 7%;
+}
+
+input[type="radio"]+label:hover {
+    color: #C6C6C6;
+}
+
+input[type="radio"]:checked+label {
+    color: #fff;
+    background-color: #833AE0;
+    box-shadow: none !important;
+}
+
+.alert {
+    display: none;
+}
+
+
+@media (max-width: 609px) {
+    .breadcrumb {
+        display: none !important;
+    }
+}
